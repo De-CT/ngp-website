@@ -3,13 +3,35 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color100: #E8D3D8;
+  --primary-color200: #D9B5BD;
+  --primary-color300: #C6909C;
+  --primary-color400: #B46B7C;
+  --primary-color500: #A1465B;
+  --primary-color600: #761C30;
+  --primary-color700: #5F1627;
+  --primary-color800: #47111D;
+  --primary-color900: #2F0B13;
+  --primary-color1000: #1C070C;
+
+
+  --second-color100: #EEEBEC;
+  --second-color200: #E2DEDF;
+  --second-color300: #D3CDCE;
+  --second-color400: #C5BCBE;
+  --second-color500: #B6ACAE;
+  --second-color600: #8C8184;
+  --second-color700: #706769;
+  --second-color800: #544E4F;
+  --second-color900: #383435;
+  --second-color1000: #221F20;
 }
 
-@theme inline {
+
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-nunito-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +42,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
 }
+
+
+
