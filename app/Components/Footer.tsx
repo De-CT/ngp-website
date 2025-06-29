@@ -29,7 +29,7 @@ const Footer = ({ view }: ViewProps) => {
       <div className=" px-6 md:px-20">
         <div className="flex flex-col md:flex-row justify-between items-center pb-8 border-b border-[#b48a91]">
           <div>
-            <h2 className="font-bold text-[52px] mb-2">Connect With Us</h2>
+            <h2 className="font-bold text-2xl md:text-[52px] mb-2">Connect With Us</h2>
             <p className="text-sm text-[#663e47] max-w-md">
               Reach out to us for support, questions, or to learn more about our
               services
@@ -59,7 +59,7 @@ const Footer = ({ view }: ViewProps) => {
               height={100}
               className="rounded-full"
             />
-            <p className="text-sm text-[#663e47] mt-2">
+            <p className="text-sm text-[#663e47] mt-2 font-medium">
               We redefine the future of global philanthropy by merging
               purposeful giving with sustainable financial empowerment.
             </p>
