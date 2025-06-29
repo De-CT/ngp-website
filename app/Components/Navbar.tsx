@@ -9,12 +9,13 @@ interface NavbarProps {
 }
 
 const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
-  const navList = [
-    { name: "Home", link: "/" },
-    { name: "About us", link: "/aboutUs" },
-    { name: "Donation", link: "/donation" },
-    { name: "Event Details", link: "/eventDetails" },
-    { name: "Contact us", link: "/contactUs" },
+    const navList = [
+    { name: 'About us', link: '/aboutUs' },
+    { name: "Career", link: '/career' },
+    { name: 'Donation', link: '/donation' },
+    { name: 'Event Details', link: '/eventDetails' },
+    { name : 'Our Project', link: '/ourproject' },
+    { name: 'Contact us', link: '/contactUs' },
   ];
 
   return (
@@ -22,13 +23,16 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
       className="w-full h-16 flex items-center justify-between px-4"
       style={{ backgroundColor }}
     >
-      <Image
+      <Link href="/">
+       <Image
         src={LogoImage}
         alt="Logo"
         width={100}
         height={100}
         className="rounded-full"
       />
+      </Link>
+     
 
       <div className="flex items-center space-x-4">
         {navList.map((link, index) => (

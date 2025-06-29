@@ -35,7 +35,9 @@ export default function EventDetailsPage() {
       </div>
 
       {/* Loop through years */}
-      {Object.entries(events).map(([year, yearEvents]) => (
+      {Object.entries(events)
+        .sort((a, b) => Number(b[0]) - Number(a[0]))
+       .map(([year, yearEvents]) => (
         <div key={year} className="mb-12 p-12">
           <h2 className="text-2xl font-semibold mb-6">{year}</h2>
 
