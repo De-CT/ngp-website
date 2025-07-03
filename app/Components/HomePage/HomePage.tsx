@@ -7,7 +7,7 @@ import {
     FaChevronUp,
 } from 'react-icons/fa';
 
-import eventImg from '../../assets/material-symbols-light_business-center-rounded.svg';
+
 import gallery1 from '../../assets/material-symbols_cast-for-education-rounded.svg';
 import gallery2 from '../../assets/material-symbols_cast-for-education-rounded.svg';
 import gallery3 from '../../assets/material-symbols_clean-hands.svg';
@@ -115,12 +115,6 @@ export default function HomePage() {
                     ))}
                 </div>
             </section>
-
-
-
-
-
-
 
             {/* Donate Banner */}
             <section
