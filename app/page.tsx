@@ -6,7 +6,7 @@ import HomePageHeroSection from "./Components/HomePageHeroSection/HomePageHeroSe
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
 
       <HomePageHeroSection />
@@ -14,6 +14,6 @@ export default function Home() {
       <HomePage />
 
       <Footer view={true} />
-    </div>
+    </>
   );
 }
