@@ -137,7 +137,7 @@ export default function HomePage() {
 
       {/* Donate Banner */}
       <section
-        className={`bg-[url(/worldBg.svg)] bg-[var(--primary-color600)]  bg-no-repeat bg-right bg-contain md:h-[300px] w-[95%] md:w-[70%] mx-auto rounded-md flex flex-col  justify-between text-center`}
+        className={`bg-[url(/mapbase.svg)] bg-[var(--primary-color600)]  bg-no-repeat bg-center bg-cover md:h-[300px] w-[95%] md:w-[70%] mx-auto rounded-md flex flex-col  justify-between text-center`}
       >
         <div className="flex flex-col items-center justify-center h-full p-6 space-y-4">
           <h2 className="text-2xl md:text-4xl font-semibold mb-2 text-white">
@@ -156,7 +156,7 @@ export default function HomePage() {
 
       {/* Gallery */}
       <section>
-        <div className="w-full flex h-24 overflow-hidden relative border">
+        <div className="w-full flex h-24 overflow-hidden relative">
           {[gallery1, gallery2, gallery3, gallery4, gallery4, gallery4].map((img, index) => (
             <div
               key={index}
