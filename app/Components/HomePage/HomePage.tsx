@@ -4,11 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-// import eventImg from '../../assets/material-symbols-light_business-center-rounded.svg';
-import gallery1 from "../../assets/material-symbols_cast-for-education-rounded.svg";
-import gallery2 from "../../assets/material-symbols_cast-for-education-rounded.svg";
-import gallery3 from "../../assets/material-symbols_clean-hands.svg";
-import gallery4 from "../../assets/material-symbols_clean-hands.svg";
+import gallery1 from "../../assets/Rectangle 22.svg";
+import gallery2 from "../../assets/Rectangle 24.svg";
+import gallery3 from "../../assets/Rectangle 22.svg";
+import gallery4 from "../../assets/Rectangle 24.svg";
 
 import image1 from "../../assets/material-symbols_clean-hands.svg";
 import image2 from "../../assets/ix_health-filled.svg";

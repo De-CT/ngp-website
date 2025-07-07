@@ -29,7 +29,7 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
     >
       <div className="w-full fixed justify-center max-lg:bg-white">
         <div
-          className={`w-full items-center justify-between p-4 shadow-lg ${
+          className={`w-full items-center justify-between p-4 shadow-lg lg:hidden ${
             menuOpen ? "hidden " : "flex"
           }`}
         >
