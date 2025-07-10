@@ -82,7 +82,7 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
               href={"/"}
               className="text-lg font-medium hover:underline transition duration-300 px-3 py-3 "
               style={{ color: "var(--primary-900)" }}
-              onClick={()=> setMenuOpen(false)}
+              onClick={() => setMenuOpen(false)}
             >
               Home
             </Link>
@@ -92,7 +92,7 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
                 href={link.link}
                 className="text-lg font-medium hover:underline transition duration-300 px-3 py-3 "
                 style={{ color: "var(--primary-900)" }}
-                              onClick={()=> setMenuOpen(false)}
+                onClick={() => setMenuOpen(false)}
               >
                 {link.name}
               </Link>
@@ -112,13 +112,14 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
         />
       </Link>
 
-      <div className="flex max-lg:hidden bg-white items-center space-x-4">
+      <div className="flex max-lg:hidden items-center space-x-4">
         {navList.map((link, index) => (
           <Link
             key={index}
             href={link.link}
-            className="text-sm font-medium hover:underline transition duration-300"
-            style={{ color: textColor }}
+            className={`"text-sm font-medium ${
+              textColor ? `text-[#fff]` : ""
+            } hover:text-[var(--second-color600)] transition duration-300"`}
           >
             {link.name}
           </Link>
@@ -128,14 +129,16 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
       <div className="flex max-lg:hidden items-center space-x-4">
         <Link
           href="/"
-          className={`text-sm font-medium hover:underline transition duration-300 border border-black  px-5 py-2  rounded-md`}
+          className={`text-sm font-medium hover:underline transition duration-300 border ${
+            textColor ? "border-white" : "border-black"
+          }  px-5 py-2  rounded`}
           style={{ color: textColor }}
         >
           Login
         </Link>
         <Link
           href="/"
-          className={`text-sm font-medium hover:underline transition duration-300 border bg-[#761C30] px-5 py-2 text-white rounded-md`}
+          className={`text-sm font-medium hover:underline transition duration-300 border-[var-(--primary-color600)] bg-[var(--primary-color600)] px-5 py-2 text-white rounded`}
         >
           Create Account
         </Link>
