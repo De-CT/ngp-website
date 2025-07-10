@@ -1,16 +1,18 @@
 import worldImage from "../../assets/worldImage.svg";
 import Image from "next/image";
+import { ChevronRightIcon } from "../icons/ChevronRightIcon";
+import { StatsSection } from "../StatsSection";
 
 const HomePageHeroSection = () => {
   return (
     <div
-      className={`bg-[url(/worldBg.svg)] bg-[var(--primary-color600)] bg-no-repeat bg-right bg-contain h-[700px] md:h-[660px] w-[98%] mx-auto rounded-[20px] flex justify-between relative`}
+      className={`bg-[url(/worldBg.svg)] bg-[var(--primary-color600)] bg-no-repeat bg-right bg-contain h-[850px] md:h-[660px] w-[98%] mx-auto rounded-[20px] flex justify-between relative`}
     >
-      <div className="md:w-[70%] absolute flex flex-col items-start mt-24 md:mt-16 p-6 md:pl-15 gap-4 z-20">
+      <div className=" md:w-[70%] lg:w-[75%] absolute flex flex-col items-start mt-24 md:mt-16 p-6 md:pl-15 gap-4 z-20">
         <h4 className="bg-[var(--primary-color500)] border border-[var(--primary-color300)] rounded-[44px] w-auto px-4 py-2 font-semibold text-white">
           Welcome to Vision-NGP Foundation
         </h4>
-        <h1 className="text-[30px] lg:text-[52px] font-bold text-white">
+        <h1 className="text-3xl lg:text-[44px] xl:text-[52px] font-bold text-white">
           <span>
             {" "}
             The world’s first{" "}
@@ -29,9 +31,14 @@ const HomePageHeroSection = () => {
           Join a movement where every donation multiplies — in purpose and in
           reward.
         </p>
-        <button className="rounded bg-white px-5 py-3 font-bold md:text-xl">
-          Make a donation
-        </button>
+        <div className="inset-0 bg-gradient-to-r from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px]">
+          <button className="rounded flex gap-1 items-center bg-white px-5 py-3 font-bold text-lg">
+            Make a donation
+            <ChevronRightIcon />
+          </button>
+        </div>
+
+        <StatsSection />
       </div>
       <div className="md:w-1/3 w-full absolute md:right-0 h-[660px] z-10">
         <Image

@@ -1,15 +1,17 @@
-import  Navbar  from "../Components/Navbar";
+"use client";
+
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import DonationPage from "../Components/DonationPage/DonationPage";
-import Footer from"../Components/Footer";
 
 const Donation = () => {
   return (
     <div>
-     <Navbar backgroundColor="#1f0f1b" textColor="#ffffff"/> 
-        <DonationPage />
-       <Footer view={false}/>
+      <Navbar backgroundColor="var(--primary-color900)" textColor="#ffffff" />
+      <DonationPage />
+      <Footer view={false} />
     </div>
-  )
-}
+  );
+};
 
-export default Donation
+export default Donation;

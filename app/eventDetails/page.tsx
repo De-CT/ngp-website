@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 const EventDetails = () => {
   return (
     <div>
-      <Navbar backgroundColor="#1f0f1b" textColor="#ffffff" />
+      <Navbar backgroundColor="var(--primary-color900)" textColor="#ffffff" />
         <EventDetailsPage />
       <Footer view={false} />
     </div>
