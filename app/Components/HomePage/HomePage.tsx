@@ -44,12 +44,12 @@ export default function HomePage() {
     {
       step: three,
       title: "Track & Earn Rewards",
-      desc: "Access your secure dashboard to track any of the following rewards; lifestyle voucher rewards, travel voucher rewards, health voucher rewards, shopping voucher rewards, cash royalty voucher rewardswh, all these and much more, within the projected period of your donation",
+      desc: "Access your secure dashboard to track any of the following rewards; lifestyle voucher rewards - travel voucher rewards - health voucher rewards - shopping voucher rewards - cash royalty voucher.. all these and much more, within the projected period of your donation.",
     },
     {
       step: four,
       title: "Invite & Share",
-      desc: "Refer others to join and multiply this first of a kind impact. The more you share the faster the reward cycle acccelerates and lives and communities are transformed.",
+      desc: "Refer others to join and multiply this first of a kind impact. The more you share the faster the reward cycle accelerates - transforming lives and uplifting communities.",
     },
   ];
 
