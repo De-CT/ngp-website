@@ -22,7 +22,7 @@ const events = {
 
 export default function EventDetailsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[var(--primary-color900)] to-[var(--primary-color1000)] text-white px-6 max-md:pt-20 pb-10">
+    <div className="min-h-screen bg-gradient-to-br from-[var(--primary-color900)] to-[var(--primary-color1000)] text-white  px-6 md:px-10 lg:px-14 max-md:pt-20 pb-10">
       {/* Header */}
 
       <nav className="text-sm text-gray-400 ">

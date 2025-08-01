@@ -24,8 +24,10 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
 
   return (
     <div
-      className="w-full h-16 flex max-md:flex-col items-center justify-between lg:px-4 z-50 max-lg:fixed"
-      style={{ backgroundColor: backgroundColor ? backgroundColor : undefined }}
+      className="w-full h-16 flex max-md:flex-col items-center justify-between lg:px-14 z-50 max-lg:fixed"
+      style={{
+        backgroundColor: backgroundColor ? `${backgroundColor}` : undefined,
+      }}
     >
       <div className="w-full fixed justify-center max-lg:bg-white">
         <div
@@ -51,8 +53,8 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
 
         {/* MOBILE MENU */}
         <div
-          className={`z-30 min-h-screen relative   ${
-            menuOpen ? "block " : " hidden"
+          className={`z-30 min-h-screen relative md:top-60 lg:hidden   ${
+            menuOpen ? "max-lg:block " : " hidden"
           }`}
         >
           <div
@@ -67,14 +69,14 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
                 className="rounded-full"
               />
             </Link>
-            <div className=" bg-white z-30 ">
+            <div className=" bg-white z-30 relative md:top-30">
               <button className="p-2" onClick={() => setMenuOpen(!menuOpen)}>
                 <Icons.CloseIcon />
               </button>
             </div>
           </div>
           <div
-            className={` bg-white flex flex-col items-center space-y-2 transition-transform  ${
+            className={` bg-white max-lg:min-h-screen  flex flex-col items-center md:justify-center space-y-2 transition-transform  ${
               menuOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
@@ -97,6 +99,20 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
                 {link.name}
               </Link>
             ))}
+            <div className="flex lg:hidden items-center space-x-4">
+              <Link
+                href="/"
+                className={`text-sm font-medium hover:underline transition duration-300 border border-[var-(--primary-color600)] px-5 py-2  rounded`}
+              >
+                Login
+              </Link>
+              <Link
+                href="https://visionngp.com"
+                className={`text-sm font-medium hover:underline transition duration-300 border-[var-(--primary-color600)] bg-[var(--primary-color600)] px-5 py-2 text-white rounded`}
+              >
+                Create Account
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -137,7 +153,7 @@ const Navbar = ({ backgroundColor, textColor }: NavbarProps) => {
           Login
         </Link>
         <Link
-          href="/"
+          href="https://visionngp.com"
           className={`text-sm font-medium hover:underline transition duration-300 border-[var-(--primary-color600)] bg-[var(--primary-color600)] px-5 py-2 text-white rounded`}
         >
           Create Account

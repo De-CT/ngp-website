@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Hero from "../../assets/Rectangle 11.svg";
+import Link from "next/link";
 
 const tierData = [
   {
@@ -36,7 +37,6 @@ const tierData = [
       "Donations are securely processed and transparently tracked via your affiliate dashboard.",
   },
 ];
-
 
 export default function DonationPage() {
   return (
@@ -88,18 +88,18 @@ export default function DonationPage() {
         {tierData.slice(0, 3).map((tier, index) => (
           <div
             key={index}
-            className="inset-0 hover:bg-gradient-to-r bg-[var(--primary-color900)] from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px] md:w-[48%]  lg:w-[30%]"
+            className="inset-0 group active:bg-gradient-to-r group hover:bg-gradient-to-r bg-[var(--primary-color900)] from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px] md:w-[48%] lg:w-[30%] select-none"
           >
             <div
-              className={`rounded p-10 bg-[var(--primary-color900)] flex flex-col justify-between shadow-md  `}
+              className={`rounded p-10 bg-[var(--primary-color900)] flex flex-col justify-between shadow-md`}
             >
               <div>
                 <h3 className="text-lg font-semibold mb-2">{tier.title}</h3>
                 <p className="text-3xl font-bold mb-4">{tier.price}</p>
                 <p className="text-gray-300 text-sm">{tier.description}</p>
               </div>
-              <button className="mt-6 bg-transparent hover:bg-[var(--primary-color700)] hover:border hover:border-[var(--primary-color900)] border border-[var(--second-color200)] transition-colors px-4 py-4 rounded text-white text-sm font-medium">
-                Donate Now
+              <button className="mt-6 bg-transparent group-hover:bg-[var(--primary-color700)] group-active:bg-[var(--primary-color700)]  group-hover:border group-active:border group-active:border-[var(--primary-color900)]  group-hover:border-[var(--primary-color900)] border border-[var(--second-color200)] transition-all px-4 py-4 rounded text-white text-sm font-medium select-none">
+                <Link href="https://visionngp.com">Donate Now</Link>
               </button>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function DonationPage() {
         {tierData.slice(3, 5).map((tier, index) => (
           <div
             key={index}
-            className="inset-0 hover:bg-gradient-to-r bg-[var(--primary-color900)] from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px] md:w-[48%] lg:w-[30%]"
+            className="inset-0 group active:bg-gradient-to-r group hover:bg-gradient-to-r bg-[var(--primary-color900)] from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px] md:w-[48%] lg:w-[30%] select-none"
           >
             <div
               className={`rounded p-10 bg-[var(--primary-color900)] flex flex-col justify-between shadow-md`}
@@ -121,8 +121,8 @@ export default function DonationPage() {
                 <p className="text-3xl font-bold mb-4">{tier.price}</p>
                 <p className="text-gray-300 text-sm">{tier.description}</p>
               </div>
-              <button className="mt-6 bg-transparent hover:bg-[var(--primary-color700)] hover:border hover:border-[var(--primary-color900)] border border-[var(--second-color200)] transition-colors px-4 py-4 rounded text-white text-sm font-medium">
-                Donate Now
+              <button className="mt-6 bg-transparent group-hover:bg-[var(--primary-color700)] group-active:bg-[var(--primary-color700)]  group-hover:border group-active:border group-active:border-[var(--primary-color900)]  group-hover:border-[var(--primary-color900)] border border-[var(--second-color200)] transition-all px-4 py-4 rounded text-white text-sm font-medium select-none">
+                <Link href="https://visionngp.com">Donate Now</Link>
               </button>
             </div>
           </div>
