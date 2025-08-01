@@ -2,6 +2,7 @@ import worldImage from "../../assets/worldImage.svg";
 import Image from "next/image";
 import { ChevronRightIcon } from "../icons/ChevronRightIcon";
 import { StatsSection } from "../StatsSection";
+import Link from "next/link";
 
 const HomePageHeroSection = () => {
   return (
@@ -22,19 +23,21 @@ const HomePageHeroSection = () => {
         </h1>
         <p className="text-base text-white lg:w-[679px] font-semibold md:font-medium">
           At Vision-NGP, we believe that giving should empower the giver as much
-          as the cause. We are the first foundation in the world to reward our
-          affiliate members with a 300% cash return on their donations within 48
-          months — while supporting impactful global projects that transform
-          lives.
+          as the cause. We are the first foundation to reward it&#39;s affiliate
+          with lifestyle voucher rewards, travel voucher rewards, shopping
+          voucher rewards, cash royalty rewards to the tune of their donation
+          within 48 months
         </p>
         <p className="text-base font-semibold text-white lg:w-[679px]">
           Join a movement where every donation multiplies — in purpose and in
           reward.
         </p>
-        <div className="inset-0 bg-gradient-to-r from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px]">
+        <div className="inset-0 active:bg-gradient-to-r hover:bg-gradient-to-r from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px]">
           <button className="rounded flex gap-1 items-center bg-white px-5 py-3 font-bold text-lg">
-            Make a donation
-            <ChevronRightIcon />
+            <Link href="https://visionngp.com" className="rounded flex gap-1 items-center">
+              Make a donation
+              <ChevronRightIcon />
+            </Link>
           </button>
         </div>
 

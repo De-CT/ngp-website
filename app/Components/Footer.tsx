@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import {
-  FaPhone,
-  FaEnvelope,
   FaFacebook,
   FaInstagram,
   FaTwitter,
@@ -12,6 +10,7 @@ import {
 } from "react-icons/fa";
 import LogoImage from "../assets/missionlogo.svg";
 import { useColorTheme } from "../constant";
+import { Icons } from ".";
 
 interface ViewProps {
   view: boolean;
@@ -51,8 +50,8 @@ const Footer = ({ view }: ViewProps) => {
         </div>
 
         {/* Footer Links */}
-        <div className="flex flex-wrap justify-between ">
-          <div className="max-md:w-full w-1/3">
+        <div className="flex flex-wrap  justify-between ">
+          <div className="max-xl:w-[280px] max-w-[407px]">
             <Image
               src={LogoImage}
               alt="Logo"
@@ -65,19 +64,19 @@ const Footer = ({ view }: ViewProps) => {
               purposeful giving with sustainable financial empowerment.
             </p>
             <div className="flex items-center text-sm mt-4 text-[#500718] space-x-2">
-              <FaPhone />
+              <Icons.PhoneIcon />
               <span>+234 81 32984 74389</span>
             </div>
             <div className="flex items-center text-sm mt-2 text-[#500718] space-x-2">
-              <FaEnvelope />
+              <Icons.EnvelopeIcon />
               <span>hello@visionNGPfoundation.com</span>
             </div>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 py-10 ">
+          <div className="flex max-[500px]:flex-wrap gap-20 max-xl:gap-10 py-10 ">
             {/* Logo & Contact */}
 
             {/* Company */}
-            <div>
+            <div className="">
               <h3 className="font-semibold mb-2">Company</h3>
               <ul className="space-y-1 text-sm text-[#663e47]">
                 <li>About Us</li>
@@ -89,7 +88,7 @@ const Footer = ({ view }: ViewProps) => {
             </div>
 
             {/* Services */}
-            <div>
+            <div className="">
               <h3 className="font-semibold mb-2">Services</h3>
               <ul className="space-y-1 text-sm text-[#663e47]">
                 <li>Donation</li>
@@ -107,14 +106,24 @@ const Footer = ({ view }: ViewProps) => {
             </div>
 
             {/* Social Icons */}
-            <div>
+            <div className="col-span-2">
               <h3 className="font-semibold mb-2">Connect with Us</h3>
-              <div className="flex space-x-3 mt-2 text-[#500718] text-lg">
-                <FaFacebook className="hover:text-[#3b5998]" />
-                <FaInstagram className="hover:text-[#E1306C]" />
-                <FaTwitter className="hover:text-[#1DA1F2]" />
-                <FaYoutube className="hover:text-[#FF0000]" />
-                <FaLinkedin className="hover:text-[#0077B5]" />
+              <div className="flex flex-wrap gap-4 mt-2 text-[#500718] text-lg">
+                <div className="p-2 flex justify-center items-center bg-white rounded-[100%]">
+                  <FaFacebook className="hover:text-[#3b5998]" />
+                </div>
+                <div className="p-2 flex justify-center items-center bg-white rounded-[100%]">
+                  <FaInstagram className="hover:text-[#E1306C]" />
+                </div>
+                <div className="p-2 flex justify-center items-center bg-white rounded-[100%]">
+                  <FaTwitter className="hover:text-[#1DA1F2]" />
+                </div>
+                <div className="p-2 flex justify-center items-center bg-white rounded-[100%]">
+                  <FaYoutube className="hover:text-[#FF0000]" />
+                </div>
+                <div className="p-2 flex justify-center items-center bg-white rounded-[100%]">
+                  <FaLinkedin className="hover:text-[#0077B5]" />
+                </div>
               </div>
             </div>
           </div>

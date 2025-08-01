@@ -52,7 +52,7 @@ const EventsCalendar = () => {
           throughout the year, including:
         </p>
       </div>
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
+      <div className="max-w-7xl grid md:grid-cols-2 gap-10 items-stretch">
         {/* Left Image Section */}
         <div
           className="relative rounded-xl max-md:h-[400px] bg-cover bg-no-repeat bg-center"
@@ -64,7 +64,7 @@ const EventsCalendar = () => {
             fill
             className="object-cover rounded-xl"
           /> */}
-          <div className="absolute bottom-0 left-0 w-full rounded-b-xl bg-gradient-to-t from-black/70 to-transparent text-white p-6">
+          <div className="absolute bottom-0 left-0 w-full rounded-b-xl bg-gradient-to-t from-black/70 to-transparent text-white p-6 flex flex-col items-start">
             <h3 className="text-xl font-bold mb-2">
               Global Summits & Conferences:
             </h3>
@@ -72,9 +72,11 @@ const EventsCalendar = () => {
               Join leaders and change-makers from around the world in global
               summits discussing the future of philanthropy and social good
             </p>
-            <button className="px-4 py-2 bg-white flex gap-2 text-black rounded-md text-base font-semibold hover:bg-gray-200 transition">
-              Learn More <Icons.ChevronRightIcon />
-            </button>
+            <div className="inset-0 active:bg-gradient-to-r hover:bg-gradient-to-r from-[#FFC636] via-[#F85535] to-[#2789CA] rounded p-[2px]">
+              <button className="px-4 py-2 bg-white flex gap-2 text-black rounded-md text-base font-semibold hover:bg-gray-200 transition">
+                Learn More <Icons.ChevronRightIcon />
+              </button>
+            </div>
           </div>
         </div>
 

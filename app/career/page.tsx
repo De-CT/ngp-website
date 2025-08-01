@@ -4,9 +4,9 @@ import Footer from "../Components/Footer"
 
 const Career = () => {
   return (
-    <div className="bg-[var(--primary-color1000)]">
-      <Navbar backgroundColor="bg-[var(--primary-color1000)]" textColor="#ffffff"/>
-      <div className="min-h-screen text-white max-md:py-12">
+    <div>
+      <Navbar backgroundColor="var(--primary-color900)" textColor="#ffffff"/>
+      <div className="min-h-screen text-white ">
         <CareerPage />
       </div>
       <Footer view={false} />
